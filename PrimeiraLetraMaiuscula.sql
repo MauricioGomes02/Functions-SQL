@@ -18,6 +18,7 @@ BEGIN
 						SET @Maiusculo = 0 -- Seta o valor de @Maiusculo para 0, informando que os próximos caracteres devem ser minúsculos até haver um espaço em branco.
 						SET @FraseCompleta = CONCAT(@FraseCompleta,@Caracter) -- Concatena o valor de @Caracter com @FraseCompleta
 					END
+					
 				ELSE -- Caso @Caracter = ' ', o bloco else será executado
 					BEGIN
 						SET @Caracter = LOWER(@Caracter) -- Seta o valor de @Caracter para um caracter minúsculo.
