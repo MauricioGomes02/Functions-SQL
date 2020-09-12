@@ -1,7 +1,6 @@
 CREATE FUNCTION dbo.PrimeiraLetraMaiuscula (@String VARCHAR(200))
 RETURNS VARCHAR(200) --Escolha o tamanho que desejar
-BEGIN 
-	
+BEGIN 	
 	DECLARE @Maiusculo INT -- Variável responsável por determinar se o caracter deve ser maiúsculo (caso seu valor seja 1) ou minúsculo (caso seu valor seja 0).
 	DECLARE @IndiceCaracter INT -- Variável responsável por Indicar o índice da string passada como parâmetro.
 	DECLARE @Caracter CHAR(1) -- Variável responsável por armazenar o caracter específico contido na posição indicada pela variável @IndiceCaracter.
